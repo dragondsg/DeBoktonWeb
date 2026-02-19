@@ -1,0 +1,210 @@
+
+							/*Header: Copy to all pages*/
+:root {
+	--backgroundcolor: gainsboro;
+	--maincolor:#03307B; 
+	--lightcolor:#3976DD; 
+	--darkwordcolor:black;
+	--lightwordcolor:white;
+	--hovercolor: #3976DD;
+	--buttonhoverlight:lightseagreen;
+	--buttonhoverdark:teal;
+	--blue:	#006bc0;
+	--red: #7b0204;
+}
+body {
+	width: 100%; top:0px; left:0px;
+	background-color: gainsboro;
+	margin: 0;
+	
+}
+
+							/*Banner Picture*/
+#bannerpic {
+	width: 100%;
+}
+
+							/*Start of Specific Book*/
+
+.bookinfo {
+	display:grid;
+	flex-direction:rows;
+	width:60%; margin:auto;
+	gap:10px;
+	justify-content:center;
+	align-items:top;
+	background-color: white;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+		"cov det"
+		"cov buy";
+}
+
+h1 {
+	font-family: "Liberation serif", pusab, impact, sans;
+	font-size: 32pt;
+	color: var(--maincolor);
+	font-weight:bold;
+	margin-bottom: 0;
+}
+h2 {
+	font-family: "liberation sans", impact, sans;
+	font-size: 14pt;
+	color: black;
+}
+h3 {
+	font-family: "liberation serif", impact, sans;
+	font-size: 14pt;
+	color: var(--maincolor);
+	font-style:italic;
+}
+p {
+	font-family: "liberation serif", "times new roman", serif;
+	font-size: 12pt;
+	color: b;
+	text-align:justify;
+	padding-right: 20px;
+}
+
+.bookcover {
+	grid-area:cov;
+	text-align:center;
+	justify-content:center;
+	object-fit:contain;
+	padding:20px 10px 20px 20px;
+}
+.bookcover img {width: 400px;}
+
+.bookdetails {
+	grid-area:det;	
+	justify-content:left;
+	padding: 0px 10px 10px 10px;
+}
+.bookbuy {
+	grid-area:buy;
+	justify-content:left;
+	padding: 10px 10px 10px 10px;
+}
+
+.bookbuy p {
+	text-align:center;
+}
+
+h5 {
+	font-family: "liberation serif", "times new roman", serif;
+	font-size: 12pt;
+	color: var(--lightwordcolor);
+	text-decoration:none;
+}
+
+.buttonbox {
+	display: flex;
+	flex-direction: row;
+	width:100%;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.amazonbutton button, .readbutton button {
+	display:flex;
+	background-color: var(--maincolor);
+	background-image: linear-gradient(to bottom right, var(--lightcolor), var(--maincolor));
+	width:150px;
+	height: 40px;
+	text-align:center;
+	justify-content:center;
+	align-items:center;
+	text-decoration:none;
+	border:3px solid var(--darkbordercolor);
+	border-radius: 10px;
+	margin-top:20px;
+	padding: 15px 15px 15px 15px;
+}
+
+.amazonbutton button:hover, .readbutton button:hover {
+	background-image: linear-gradient(to bottom right, var(--buttonhoverlight), var(--buttonhoverdark));
+}
+
+.h6wordbox {
+	display: flex;
+	width:60%; margin:auto;
+	justify content: center;
+	margin-bottom:0px;
+	margin-top: 20px;
+	background-color: var(--darkbordercolor); /*var(--maincolor);*/
+	padding: 10px 10px 10px 10px;
+}
+
+h6 {
+	width:100%;
+	font-family: "liberation serif", impact, serif;
+	font-size: 18pt;
+	text-align: center;
+	color:black;
+	margin:0;
+}
+											/*Embedded chapter*/
+.readch {
+	display:flex;
+	background-color:var(--darkbordercolor);
+	width:60%; margin: auto;
+	margin-top:0px;
+	justify-content:center;
+	border: 3px solid black;
+}
+
+												/*Footer*/
+footer {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	background-color:black;
+	color:white;
+	justify-content: space-evenly;
+	padding: 5px 0px 5px 0px;
+	margin: 20px 0px 4px 0px;
+	border-top: 3px solid var(--red);
+	box-shadow: 0px -4px 3px darkgray;
+}
+
+.footerlinks {
+	display:flex;
+	justify-content:space-evenly;
+}
+
+.footerlinks a {
+	color:var(--lightwordcolor);
+	font-family: impact, serif;
+	text-decoration:none;
+}
+
+.footerlinks a:hover {
+	color:var(--hovercolor);
+}
+@media screen and (max-width: 1400px) {
+.bookinfo {width: 80%; margin: auto;}
+.bookdetails, .bookbuy {width: 70%; margin: auto;}
+}
+@media screen and (max-width:1023px) {
+.hide1 {display: none;}
+.logopic {height: 40px; margin: 5px 0px 5px 5px;}
+.deboktonwords {height: 15px;}
+.bookinfo {
+	flex-direction:rows;
+	width:95%; margin:auto;
+	grid-template-columns: 95%;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"cov"
+		"det"
+		"buy";}
+.readch {width: 95%; margin: auto;}
+}
+@media screen and (max-width:767px) {
+header section {width: 80%;} nav {width: 20%;}
+h1 {font-size: 24pt;}
+h2 {font-size: 14pt;}
+.hide1 {display: none;}
+.bookcover img {width: 70%;}
+}
