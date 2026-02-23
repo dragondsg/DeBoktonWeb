@@ -12,16 +12,28 @@ class seriesLink {
 		this.box.classList.add("card");
 		if (audbool) {
 			audioBox.appendChild(this.box);
+			this.box.classList.add("aucard");
 		} else if (series.category[0] == "novel") {
-			if (series.books.length > 2) triBox.appendChild(this.box);
-			else if (series.books.length == 2) biBox.appendChild(this.box);
-			else monBox.appendChild(this.box);
+			if (series.books.length > 2) {
+				triBox.appendChild(this.box);
+				this.box.classList.add("trcard");
+			} else if (series.books.length == 2) {
+				biBox.appendChild(this.box);
+				this.box.classList.add("secard");
+			} else {
+				monBox.appendChild(this.box);
+				this.box.classList.add("nacard");
+			}
 		} else if (series.category[0] == "short") {
 			shortBox.appendChild(this.box);
+			this.box.classList.add("yrcard");
+			if (series.id == "path") this.box.classList.add("path");
 		} else if (series.category[0] == "picture") {
 			pictureBox.appendChild(this.box);
+			this.box.classList.add("pbcard");
 		} else if (series.category[0] == "edu") {
 			eduBox.appendChild(this.box);
+			this.box.classList.add("nfcard");
 		}
 		
 		this.booklink = document.createElement("a");
@@ -41,7 +53,7 @@ class seriesLink {
 		}
 		
 		this.title = document.createElement("p");
-		this.title.innerHTML = series.seriesName + " series";
+		this.title.innerHTML = series.seriesName;
 		this.box.appendChild(this.title);
 	}
 }
