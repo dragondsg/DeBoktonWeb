@@ -2,7 +2,7 @@ let body = document.getElementById("box");
 const url_string = window.location.href;
 
 class BookSection {
-	constructor (series, book) {
+	constructor (series, book, isAudio) {
 		this.section = document.createElement("section");
 		this.section.classList.add("bookinfo");
 		body.appendChild(this.section);
@@ -12,7 +12,8 @@ class BookSection {
 		this.section.appendChild(this.cover);
 		
 		this.img1 = document.createElement("img");
-		this.img1.setAttribute("src", "../pics/" + book.images.cover);
+		if (isAudio) this.img1.setAttribute("src", "../pics/" + book.images.audio);
+		else this.img1.setAttribute("src", "../pics/" + book.images.cover);
 		this.img1.setAttribute("alt", series.seriesName + " Cover");
 		this.cover.appendChild(this.img1);
 		
@@ -27,7 +28,7 @@ class BookSection {
 		this.genre.innerHTML = series.genres.join(", ");
 		this.details.appendChild(this.genre);
 		this.money = document.createElement("h3");
-		if (book.price > 0) this.money.innerHTML = "$" + book.price + " paperback";
+		if (book.price > 0 && !isAudio) this.money.innerHTML = "$" + book.price + " paperback";
 		this.details.appendChild(this.money);
 		this.des = document.createElement("p");
 		this.des.innerHTML = book.description;
@@ -54,7 +55,7 @@ class BookSection {
 		this.buttonbox.classList.add("bookbuy");
 		this.buy.appendChild(this.buttonbox);
 		
-		if (book.links.paperback != "") {
+		if (book.links.paperback != "" && !isAudio) {
 			this.ab1 = document.createElement("div");
 			this.ab1.classList.add("amazonbutton");
 			this.buttonbox.appendChild(this.ab1);
@@ -70,7 +71,7 @@ class BookSection {
 			this.bb1.appendChild(this.btext1);
 		}
 		
-		if (book.links.kindle != "") {
+		if (book.links.kindle != "" && !isAudio) {
 			this.ab2 = document.createElement("div");
 			this.ab2.classList.add("amazonbutton");
 			this.buttonbox.appendChild(this.ab2);
@@ -107,10 +108,11 @@ class BookSection {
 let url = new URL(url_string);
 let id = url.searchParams.get('id');
 let s = series.find((a) => a.id == id);
+let ab = url.searchParams.get('aud');
 document.title = s.seriesName;
 
 for (let i of s.books) {
-	new BookSection(s, books.find((b) => b.id == i));
+	new BookSection(s, books.find((b) => b.id == i), ab);
 }
 
 if (s.preview != "") {

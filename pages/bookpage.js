@@ -36,16 +36,21 @@ class seriesLink {
 			this.box.classList.add("nfcard");
 		}
 		
+		this.url = "seriespage.html?id=" + series.id;// + "&aud=" + audbool;
+		if (audbool) this.url += "&aud=1"
+		
 		this.booklink = document.createElement("a");
-		this.booklink.setAttribute("href", "seriespage.html?id=" + series.id);
+		this.booklink.setAttribute("href", this.url);
 		this.box.appendChild(this.booklink);
 		
 		this.pic = document.createElement("img");
 		this.pic.setAttribute("alt", series.seriesName);
 		this.booklink.appendChild(this.pic);
 		
-		if (audbool) this.pic.setAttribute("src", "../pics/" + series.images.square);
-		else {
+		if (audbool) {
+			let b = books.find((a) => a.id == series.books[0]);
+			this.pic.setAttribute("src", "../pics/" + b.images.audio);
+		} else {
 			if (series.images.series == "") {
 				let b = books.find((a) => a.id == series.books[0]);
 				this.pic.setAttribute("src", "../pics/" + b.images.cover);
