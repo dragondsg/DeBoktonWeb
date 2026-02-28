@@ -216,15 +216,17 @@ h2 {font-size: 20pt;}
 .contactus {width:100%; left: 0px;}
 .answer {flex-direction: column; align-items: center;}
 .authorbio {
-	width: 100%;
+	width: 90%;
+	padding: 5%;
 	justify-content: center;
 }
-.biohead {flex-direction: column;
+.biohead {
+	flex-direction: column;
 	width: 100%;
 	justify-content: center;
+	align-items: center;
 }
 .fundbox {width: 100%;}
 .joinlist {width: 95%}
 .biohead {justify-content: center;}
-.authorbio {width: 100%; justify-content: center;}
 }
