@@ -530,27 +530,21 @@ const books = [
 		description: "Carnival is the biggest event in the Eubos System, an event filled with excitement and fun, until it turned dark. With children going missing, strange mutated monsters, a deadly disease spreading, and a kidnapped scientist, someone must figure out who is behind the terrible scheme and stop him!The task is given to an eclectic group that must learn to work together, and stealth and lightning seldom do. Yet, stealth and lightning must work together to save the system.",
 		links: {paperback: "https://www.amazon.com/Normal-Eubos-System-Renee-Greene/dp/1090946929/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1677879339&sr=1-1",
 			kindle: "https://www.amazon.com/Code-Normal-Eubos-System-Book-ebook/dp/B0855LR343/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1677879339&sr=1-1",
-			audiobook: "https://www.amazon.com/gp/product/1090946929?notRedirectToSDP=1&ref_=dbs_m_mng_rwt_calw_tpbk_tkin&storeType=ebooks&qid=1772310852&sr=1-1
-https://www.amazon.com/gp/product/B0855LR343?ref_=dbs_m_mng_rwt_calw_tkin_0&storeType=ebooks&qid=1772310852&sr=1-1
-https://www.amazon.com/gp/product/B0GM39PYY7?notRedirectToSDP=1&ref_=dbs_m_mng_rwt_calw_taud_tkin&storeType=ebooks&qid=1772310852&sr=1-1"},
+			audiobook: "https://www.amazon.com/gp/product/B0GM39PYY7?notRedirectToSDP=1&ref_=dbs_m_mng_rwt_calw_taud_tkin&storeType=ebooks&qid=1772310852&sr=1-1"},
 	},
 	{	id: "eubos2", name: "Phantom Storm", pageNum: 371, wordCount: "84,000", price: 14.99,
 		images: {cover: "noveubos2.jpg", audio: "audioeubos2.jpg"},
 		description: "What lies beyond the rip in space? Danger! Science is dangerous! When careless scientists rip open the fabric of space and release an army of genetically engineered super soldiers, the only people who can respond are a small crew of other scientists. Along with the mysterious Phantom Storm, they must find a way to save their dimension from invasion.",
 		links: {paperback: "https://www.amazon.com/Phantom-Storm-Eubos-System/dp/1091169187/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1677879339&sr=1-1",
 			kindle: "https://www.amazon.com/Phantom-Storm-Eubos-System-Book-ebook/dp/B0857F4C38/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1677879339&sr=1-1",
-			audiobook: "https://www.amazon.com/gp/product/1091169187?notRedirectToSDP=1&ref_=dbs_m_mng_rwt_calw_tpbk_tkin&storeType=ebooks&qid=1772310852&sr=1-1
-https://www.amazon.com/gp/product/B0857F4C38?ref_=dbs_m_mng_rwt_calw_tkin_1&storeType=ebooks&qid=1772310852&sr=1-1
-https://www.amazon.com/gp/product/B0GM3QVMDV?notRedirectToSDP=1&ref_=dbs_m_mng_rwt_calw_taud_tkin&storeType=ebooks&qid=1772310852&sr=1-1"},
+			audiobook: "https://www.amazon.com/gp/product/B0GM3QVMDV?notRedirectToSDP=1&ref_=dbs_m_mng_rwt_calw_taud_tkin&storeType=ebooks&qid=1772310852&sr=1-1"},
 	},
 	{	id: "eubos3", name: "Neuro-Tech", pageNum: 359, wordCount: "82,500", price: 14.99,
 		images: {cover: "noveubos3.jpg", audio: "audioeubos3.jpg"},
 		description: "Never compromise a principle!Stand for the right! For Charles, adventuring was a game -- exciting, fun, and glamorous -- until the stakes rose to epic proportions, threatening the lives and freedom of everyone in the entire system of planets. Now, he must lead a motley crew to save the system from a past he never knew and an ancient war that has continued on in the shadows.This is the second book of the Eubos System trilogy, an exciting series of adventures that are action packed and fun for the entire family. The trilogy is written for upper elementary and up, but can be enjoyed by readers of all ages.",
 		links: {paperback: "https://www.amazon.com/Neuro-Tech-Eubos-System-Renee-Greene/dp/1091179166/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1677879339&sr=1-1",
-			kindle: "",
-			audiobook: "https://www.amazon.com/gp/product/1091179166?notRedirectToSDP=1&ref_=dbs_m_mng_rwt_calw_tpbk_tkin&storeType=ebooks&qid=1772310852&sr=1-1
-https://www.amazon.com/gp/product/B085BDYDDN?ref_=dbs_m_mng_rwt_calw_tkin_2&storeType=ebooks&qid=1772310852&sr=1-1
-https://www.amazon.com/gp/product/B0GM21M1VF?notRedirectToSDP=1&ref_=dbs_m_mng_rwt_calw_taud_tkin&storeType=ebooks&qid=1772310852&sr=1-1"},
+			kindle: "https://www.amazon.com/gp/product/B085BDYDDN?ref_=dbs_m_mng_rwt_calw_tkin_2&storeType=ebooks&qid=1772310852&sr=1-1",
+			audiobook: "https://www.amazon.com/gp/product/B0GM21M1VF?notRedirectToSDP=1&ref_=dbs_m_mng_rwt_calw_taud_tkin&storeType=ebooks&qid=1772310852&sr=1-1"},
 	},
 /*Dark Elf*/	
 	{	id: "darkelf1", name: "Nighthawk", pageNum: 343, wordCount: "81,500", price: 14.99,
