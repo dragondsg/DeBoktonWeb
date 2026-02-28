@@ -1,8 +1,8 @@
 <?php
-$servername = "nightmare";
-$db_username = "DarkDrake";
-$db_password = "Allfearthedarklordswrath!";
-$dbname = "mailing_list";
+$servername = "127.0.0.1:3306";
+$db_username = "u786062685_greenedo";
+$db_password = "Sealed4ever!";
+$dbname = "u786062685_dbemail";
 
 // Create connection
 $conn = new mysqli($servername, $db_username, $db_password, $dbname);
