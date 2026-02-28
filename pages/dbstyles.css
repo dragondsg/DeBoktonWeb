@@ -257,6 +257,88 @@ p {
 	color: var(--red);
 }
 
+						/*Fundraiser*/
+						
+.fundraiser	{
+	background-color: #bbe1ff;
+	margin-top:-40px;
+}	
+.fundbox{
+	margin-top: 0px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	flex-wrap: wrap;
+}	
+.fundraiser img {
+	height: 400px; width: 600px;
+}	
+.groupwords {
+	height: 400px; width: 600px;
+	background-color: black;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+.fundraiser h2 {
+	background-color: red;
+	width:100%;
+	font-size: 32pt;
+	margin-top: -10px;
+	padding: 10px 0px 10px 0px;
+}
+.fundraiser p {
+	margin-top: 8px;
+	background-color: black;
+	color: white;
+	font-size: 16pt;
+	text-align: center;
+}	
+.fundpage {
+	margin-top:-120px;
+	margin-bottom: 20px;
+	background-color: #bbe1ff;
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 15px;
+	align-items: center;
+	justify-content: center;
+}
+.fundpage img {
+	margin-top: 20px;
+	height: 320px; width: 480px;
+}
+.fundtitle {
+	color: white;
+}
+.icon {
+	width:30px; height 30px;
+} 
+.fundexplain {
+	width: 30%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-top: 20px;
+	align-items: center;
+	justify-content: center;
+}
+.fundexplain h2 {
+	color: crimson;
+}
+
 						/*Section 3: Featured Books*/
 						
 .section3 {
@@ -346,7 +428,6 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/*background-image: url(bgPFP.png);*/
 	background-color: snow;
 	background-position: center center;
 	width: 100%;
@@ -380,22 +461,15 @@ p {
 .section4 {
 	position: relative;
 	display: flex;
-	/*background-image: url(headerpfp.png);*/
 	background-position: center center;
 	width: 100%;
 	justify-content:left;
 	height:420px;
 	border-top: 2px solid var(--red);
 }
-/*.section4 .pitch h1, .section4 .pitch h2 {
-	background-color: black;
-	border-radius: 5px;
-	padding: 0px 5px 0px 5px;
-}*/
 
 					/*Section 5 Find Your Hero Within*/
 .section5 {
-	/*background-image: url(bgtealphmist2.png);*/
 	background-position: center top;
 	width:80%; margin: auto;
 	margin-top: 20px; margin-bottom: 20px;
@@ -457,10 +531,11 @@ footer h4 {
 h1 {font-size: 30pt;}
 h2 {font-size: 20pt;}
 h3 {font-size: 14pt;}
-.section1 {height: 500px;}
+.section1 {width: 100%; height: auto;
+	margin-right: 0px;}
 .pitch {justify-content: center;
-	margin-top: 4%;
 	width: 80%; margin: auto;}
+.fundraiser {margin-top: 40px;}
 .booktype {width:95%; margin:auto;
 	height: 260px;}
 .sec3h1{font-size: 30pt;}
@@ -468,15 +543,35 @@ h3 {font-size: 14pt;}
 .startohero img {height: 400px;}
 .startohero .pitch {width: 98%; text-align: center;}
 .pitch p {width: 95%;}
+.pitch img {width: 95%; height: auto;}
+.fundraiser {width: 100%;}
+.fundpage {flex-direction: column;}
+.fundexplain {width: 95%;}
+.groupwords {width: 95%; margin-top: 10px;}
 }
 
 @media screen and (max-width:767px) {
-header section {width: 80%;} nav {width: 20%;}
-.hide1 {display: none;}
+header section {width: 100%;}
+.deboktonwords {
+	height: 15px;
+	padding-left: 0px;
+} 
+nav {width: 90%;}
 h1 {font-size: 24pt;}
 h2 {font-size: 16pt;}
 h3 {font-size: 14pt;}
-.pitch {width: 98%;}
+h4 {font-size: 15px;}
+.fundraiser img {
+	width: 80%; height: auto;
+	align-content: center;
+}	
+.groupwords {
+	width: 80%; height: auto;
+	gap: 15px;
+}
+.pitch {width: 98%;
+	margin-top: 40px;
+}
 .booktype {
 	grid-template-columns: auto;
 	grid-template-rows: auto;
@@ -499,6 +594,10 @@ h3 {font-size: 14pt;}
 .section5 h1 {margin-top: 40px;}
 .phicon img {width: 200px; height: 200px;
 	margin: 5px 5px 5px 5px;}
-footer nav {display: none;}
-
+.fundraiser {width: 100%;}
+.fundpage {flex-direction: column;}
+.pitch img {width: 95%; height: auto;}
+.fundexplain {width: 95%;}
+.groupwords {width: 95%; margin-top: 30px;}
+.logopic {display: none;}
 }

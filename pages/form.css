@@ -50,7 +50,6 @@ p {	font-family: "liberation sans", sans;
 }
 						/*Top Banner*/
 .banner img {
-	margin-top:60px;
 	width: 100%;
 	border-bottom: 3px solid var(--red);
 }
@@ -59,16 +58,17 @@ hr {
 	left: 0;
 	right: 0;
 	border: 3px solid var(--red);
+	width: 100%;
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
 .contactus {
-	width: 100%;
-	background-image: url(../bgstars2.png);
+	width: 80%;
+	left: 10%;
 	position: relative;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-evenly;
 	gap: 10px;
 	padding: 20px 0px 20px 0px;
 	margin-bottom: 0px; margin-top: 0px;
@@ -111,7 +111,10 @@ label {
 	justify-content: center;
 	align-items: center;
 }
-input, #phonetype, #state  {
+#name, #email_address {
+	width: 80%;
+}
+input {
 	height: 30px;
 	margin: 8px 8px 8px 8px;
 	background-color: whitesmoke;
@@ -119,44 +122,24 @@ input, #phonetype, #state  {
 	border-shadow: 3px 3px 3px darkgray;
 }
 
+.joinlist img {
+	width: 20px; height: 20px;
+}
 form {
 	margin: 10px 10px 0px 10px;
-	display: grid;
-	width: 30%;
+	width: 100%;
 	background-color: snow;
 	border:2px solid black;
 	border-radius: 15px;
 	box-shadow: 3px 3px 2px silver;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-areas:
-		"wor wor wor wor wor"
-		"ic1 nam nam nam nam"
-		"ic5 ema ema ema ema"
-		"ic2 phn phn phn pht"
-		"ic3 add add add add"
-		"ic4 cit cit cit cit"
-		"ic4 sta sta zip zip"
-		"ic6 bda bda bda bda"
-		" .  sub sub sub sub";
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-.icon1 {grid-area: ic1;}
-.icon2 {grid-area: ic2;}
-.icon3 {grid-area: ic3;}
-.icon4 {grid-area: ic4;}
-.icon5 {grid-area: ic5;}
-.icon6 {grid-area: ic6;}
-.joinlist {grid-area: wor;}
-#name {grid-area: nam;}
-#phonenum {grid-area: phn;}
-#phonetype {grid-area: pht;}
-#address {grid-area: add;}
-#city {grid-area: cit;}
-#state {grid-area: sta;}
-#zip {grid-area: zip;}
-#email {grid-area: ema;}
-#birthday {grid-area: bda}
-
 .subbutton {
+	width: 50%;
 	text-align: left;
 	color: white;
 	grid-area: sub;
@@ -166,113 +149,7 @@ form {
 	padding: 0px 10px 0px 10px;
 	border-shadow: 3px 3px 3px darkgray;
 }
-						/*Writing Course*/
-.writingbackground {
-	position: relative;
-	background-image: linear-gradient(to bottom, lavender, #1D044E);
-	border-top: 3px solid var(--blue);
-	width: 100%;
-	padding: 30px 30px 30px 30px;
-	margin-top: 0px;
-}
-.wrclass {width: 50%; margin: auto;
-	display: flex;
-	flex-direction: row;
-	background-color: snow;
-	justify-content: center;
-	align-items: center;
-	border: 3px solid var(--blue);
-	border-radius: 15px;
-	padding: 20px 20px 20px 20px;
-	gap: 30px;
-}
-.wrclass img {width: 320px; height: 400px;
-	display: flex;
-	flex-direction: row;
-	text-align: center;
-}
-.wrpitch {position: relative;
-	display: flex;
-	flex-direction: column;
-	text-justify: justify;
-}
-						/*Bubbles*/
-/*.bub {
-	position: absolute;
-	width: 12%;
-	border-radius: 50%;
-	z-index:3;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.bub img {
-	object-fit: contain;
-	width: 100%;
-	border-radius: 50%;
-}
-.bub p {
-	position: absolute;
-	padding: 5px 10px 5px 10px;
-	z-index:4;
-}
-#bubble1 {top: -2%; left:1%;}
-#bubble2 {top: 30%; left:10%;}
-#bubble3 {top: 55%; left:3%;}
-#bubble4 {top: 60%; left:30%;}
-#bubble5 {top: 45%; left:65%;}
-#bubble6 {top: 50%; left:48%;}
-#bubble7 {top: -4%; left:77%;}
-#bubblelast {top: 65%; left:82%;}
-*/
 
-						/*YouTube Channel*/
-.king {
-	background-image: url(../bgPFP.png);
-	border-top: 3px solid var(--blue);
-	padding: 40px;
-}
-.kingcobra {
-	background-color: Azure;
-	border-radius: 10px;
-	width: 60%; margin: auto;
-	position: relative;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-}
-.kinghead {
-	position: relative;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	text-justify: justify;
-	gap: 20px;
-}
-.kinghead img {width: 160px;}
-.kinghead h2 {color: green;}
-#kci, .kch {text-align: justify;}
-.kingwords {text-align: justify;}
-.kingwords p {text-align: justify;}
-
-.tostars {
-	border-top: 20px;
-	background-image: linear-gradient(to bottom, indigo, var(--blue), black);
-	width: 100%;
-	position: relative;
-	padding: 20px 0px 20px 0px;
-	display: flex;
-	flex-direction: column;
-	border-top: 4px solid azure;
-}
-.tostars h2 {color: white;
-	text-shadow: -1px -2px 2px black;
-}
-.tostars p {color: white; 
-	width: 60%; margin:auto; 
-	font-size: 14pt;
-	padding-bottom: 10px;
-}
 						/*About Us*/
 .authorbio {
 	position: relative;
@@ -320,53 +197,34 @@ form {
 #csoonbackground {background-color: snow;} /*#7a9b9e*/
 #csooncolor {background-image: none;}
 
-						/*Footer*/
-footer {
-	position: relative;
-	display: flex;
-	z-index:10;
-	flex-direction: row;
-	width: 100%;
-	background-color: black;
-	border-top: 3px solid var(--red);
-	box-shadow: 0px -4px 3px darkgray;
-}
-nav {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	justify-content: space-evenly;
-	align-items: center;
-}
-nav a {
-	text-decoration: none;
-}
-footer h4 {
-	color: white;
-}
+					
+
 
 @media screen and (max-width:1023px) {
 .contactus {flex-direction: column; align-items: center;}
 .emailus {width: 90%; margin: auto; padding: 10px;}
 form {width: 90%; margin: auto;}
-.wrclass {width: 90%; margin: auto;	flex-direction: column;}
-.wrclass img {width: 160px; height: 200px;}
-.kinghead {flex-direction: column; align-items: center;}
-.kingcobra {width: 90%; margin: auto;}
-.tostars {border-top: 0px;}
-.tostars h2 {padding: 10px;}
-.tostars p {width: 85%; margin:auto;}
-.authorbio {width: 90%; margin: auto;}
+.fundbox {width: 100%;}
+.joinlist {width: 95%}
+.biohead {justify-content: center;}
 }
+
 
 @media screen and (max-width:767px) {
 h1 {font-size: 24pt;}
 h2 {font-size: 20pt;}
+.contactus {width:100%; left: 0px;}
 .answer {flex-direction: column; align-items: center;}
-.biohead {flex-direction: column; align-items: center;}
-.biopic {width: 50%;}
-.bioname {width: 90%;}
-.biohead h2 {font-size: 24pt;}
-.biohead h3 {font-size: 16pt;}
+.authorbio {
+	width: 100%;
+	justify-content: center;
+}
+.biohead {flex-direction: column;
+	width: 100%;
+	justify-content: center;
+}
+.fundbox {width: 100%;}
+.joinlist {width: 95%}
+.biohead {justify-content: center;}
+.authorbio {width: 100%; justify-content: center;}
 }

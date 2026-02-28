@@ -51,8 +51,7 @@ p {
 }
 						/*Section 1*/
 .section1 img {
-	/*margin-top:60px;*/
-	width: 100%; height: 450px;
+	width: 100%; height: auto;
 	border-bottom: 3px solid var(--red);
 }
 
@@ -186,8 +185,8 @@ nav {justify-content: center;}
 @media screen and (max-width:767px) {
 header section {width: 80%;} nav {width: 20%;}
 h2 {font-size: 18pt;}
-.trcard, .secard, .nacard, .yrcard, #yrcard2, .pbcard, .nfcard, .aucard {width: 90%;}
-.trcard img, .secard img, .nacard img, .yrcard img, #yrcard2 img, .pbcard img, .nfcard img, .aucard  img {width: 90%;}
-.booklist, .novellist {width: 95%;}
+.trcard, .secard, .nacard, .yrcard, #yrcard2, .pbcard, .nfcard, .aucard {width: 90%; height: auto;}
+.trcard img, .secard img, .nacard img, .yrcard img, #yrcard2 img, .pbcard img, .nfcard img, .aucard  img {width: 90%; height: auto;}
+.booklist, .novellist {width: 95%; height: auto;}
 .section2 img {width: 98%; height: auto;}
 }
