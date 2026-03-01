@@ -49,6 +49,30 @@ p {
 	color: black;
 	text-align: justify;
 }
+
+.jumpto {
+	background-color: black;
+	color: white;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+}
+.jumpto h4 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-decoration: none;
+}
+.jumptostripe {
+	margin-top: 0px;
+	width: 100%;
+	background-color: black;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0px 0px 0px 0px;
+}
+
 						/*Section 1*/
 .section1 img {
 	width: 100%; height: auto;
@@ -176,7 +200,6 @@ footer h4 {
 }
 
 @media screen and (max-width:1023px) {
-.hide1 {display: none;}
 .logopic {height: 40px; margin: 5px 0px 5px 5px;}
 .deboktonwords {height: 15px;}
 nav {justify-content: center;}

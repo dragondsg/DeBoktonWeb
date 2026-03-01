@@ -282,8 +282,13 @@ const series = [
 		images: {series: "", square: ""}, featured: false,
 		preview: ""
 	},	
-	{	id: "helpsalot",   seriesName: "Sir Helps-a-Lot",   author: "Julia Alvarez",   illustrator: "Tamia Gordon",
-		books: ["helpsalot1", "helpsalot2"],   genres: ["story"], category: ["picture",""],
+	{	id: "helpsalotsadprincess",   seriesName: "Sir Helps-a-Lot and the Sad Princess",   author: "Julia Alvarez",   illustrator: "Tamia Gordon",
+		books: ["helpsalot1"],   genres: ["story"], category: ["picture",""],
+		images: {series: "", square: ""}, featured: false,
+		preview: ""
+	},	
+	{	id: "helpsalotmessymonster",   seriesName: "Sir Helps-a-Lot and the Messy Monster",   author: "Julia Alvarez",   illustrator: "Tamia Gordon",
+		books: ["helpsalot2"],   genres: ["story"], category: ["picture",""],
 		images: {series: "", square: ""}, featured: false,
 		preview: ""
 	},	
@@ -339,7 +344,7 @@ const series = [
 	},	
 	{	id: "learntoread",   seriesName: "The Learn to Read Collection",   author: "Renee Greene",   illustrator: "",
 		books: ["readitmyself1", "iloveyou1", "silly1", "willynilly1"],   genres: ["rhyme", "collection", "learntoread"], category: ["picture",""],
-		images: {series: "", square: ""}, featured: false,
+		images: {series: "pblearntoreadseries.png", square: ""}, featured: false,
 		preview: ""
 	},
 	
