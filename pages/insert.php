@@ -5,7 +5,7 @@ $db_password = "Sealed4ever!";
 $dbname = "u786062685_dbemail";
 
 // Create connection
-$conn = new mysqli($servername, $db_username, $db_password, $dbname);
+$conn = new mysql($servername, $db_username, $db_password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
