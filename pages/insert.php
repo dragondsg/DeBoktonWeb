@@ -22,7 +22,7 @@ $stmt->bind_param("ss", $name, $email); // "ss" means two string parameters
 
 // Execute the statement
 if ($stmt->execute()) {
-  echo "New record inserted successfully";
+  header('Location: http://debokton.com');
 } else {
   echo "Error: " . $stmt->error;
 }
