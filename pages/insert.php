@@ -5,7 +5,7 @@ $db_password = "Sealed4ever!";
 $dbname = "u786062685_dbemail";
 
 // Create connection
-$conn = new mysql($servername, $db_username, $db_password, $dbname);
+$conn = mysqli_connect($servername, $db_username, $db_password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
@@ -17,7 +17,7 @@ $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email_address', FILTER_SANITIZE_STRING); // Consider hashing passwords for security
 
 // Prepare and bind the INSERT statement
-$stmt = $conn->prepare("INSERT INTO mailing_list (name, email_adress) VALUES (?, ?)");
+$stmt = $conn->prepare("INSERT INTO dbemail (name, email_adress) VALUES (?, ?)");
 $stmt->bind_param("ss", $name, $email); // "ss" means two string parameters
 
 // Execute the statement
