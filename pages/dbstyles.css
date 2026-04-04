@@ -8,7 +8,7 @@ body {
 	width: 100%; top:0px; left:0px;
 	background-color: black;
 	margin: 0;
-	max-width: 100%;
+	width: 100%;
     overflow-x: hidden;
 }
 
@@ -141,7 +141,7 @@ p {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	margin-left: 4%; margin-top: 4%;
+	margin-left: 4%; margin-top: 2%;
 }
 .section1 .pitch h1 {
 	color: white; text-shadow: -1px -2px 2px var(--red);
@@ -164,6 +164,7 @@ p {
 	margin-bottom: 30px;
 	box-shadow: -2px -2px 2px silver;
 }
+
 
 						/*Section 2: Genre Links*/
 
@@ -347,7 +348,7 @@ p {
 	width:100%;
 	padding: 25px 0px 20px 0px;
 	background-color: #e1e3e7;
-	background-image: url(bgtilemist.png);
+	background-image: url("../pics/bgtilemist.png");
 	background-position: center top;
 	background-size: cover;
 	border-top: 2px solid var(--blue);
@@ -357,6 +358,8 @@ p {
 	color: dodgerblue;
 	text-shadow: -2px -2px 1px var(--red);
 	margin-bottom: 0px;
+	font-size: 18pt;
+	padding: 0px 25px 0px 25px;
 }
 .featured {
 	position: relative;
@@ -419,6 +422,109 @@ p {
 	padding-right: 10px;
 	background-image: linear-gradient(to right, transparent, snow);
 	z-index: 3;
+}
+
+.family {
+	background: linear-gradient(snow, #e1e3e7, #cce6fb); /*#fbeaea is darker snow*/
+	margin: 0;
+	padding: 20px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+.family h1{
+	background-color: transparent;
+	margin: 0;
+	padding: 30px;
+}
+.family h2 {
+	color: var(--blue);
+	text-align: Left;
+}
+.family p {
+	text-align: justify;
+}
+.familybox {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 80%; margin: auto;
+}
+.familybox img {
+	width: 400px;
+	border: 5px ridge silver;
+}
+.familywordbox {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: left;
+	width: 50%;
+	padding: 0px 20px 0px 20px;
+	border: 0px 5px 4px silver;
+}
+.reviews {
+	width: 100%;
+	background-color: #cce6fb;
+	margin: 0;
+	padding: 20px;
+}
+
+
+
+						/*Recommended Section*/
+
+.recommend {
+	background: transparent;
+	margin: 0;
+	width: 80%;
+	padding: 20px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+.reccard {
+	/*width: 400px;
+	height: 300px;*/
+	background-color: transparent;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: top;
+	align-items: center;
+}
+.reccard a img {
+	width: 300px;
+}
+.recbutton {
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--blue);
+	padding: 10px 20px 10px 20px;
+	border: 1px solid white;
+	border-radius: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: -2px -2px 2px silver;
+}
+.recbutton h3 {
+	margin-top: 0px;
+	font-size: 12pt;
 }
 
 						/*YouTube Channel*/
@@ -539,7 +645,7 @@ h3 {font-size: 14pt;}
 .fundraiser {margin-top: 40px;}
 .booktype {width:95%; margin:auto;
 	height: 260px;}
-.sec3h1{font-size: 30pt;}
+.sec3h1{font-size: 16pt;}
 .startohero {flex-direction: column; height:auto;}
 .startohero img {height: 400px;}
 .startohero .pitch {width: 98%; text-align: center;}
@@ -586,7 +692,7 @@ h4 {font-size: 15px;}
 .booktype p {font-size: 12pt;}
 .featimg {height: 260px; width: 260px;}
 .card {height: 260px; width: 260px;}
-.sec3h1{font-size: 24pt;}
+.sec3h1{font-size: pt;}
 .startohero img {height: 200px;}
 .section5 {width:90%; margin: auto;
 	margin-top: 10px; margin-bottom: 10px;
