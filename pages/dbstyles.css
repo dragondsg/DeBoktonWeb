@@ -358,7 +358,7 @@ p {
 	color: dodgerblue;
 	text-shadow: -2px -2px 1px var(--red);
 	margin-bottom: 0px;
-	font-size: 18pt;
+	font-size: 16pt;
 	padding: 0px 25px 0px 25px;
 }
 .featured {
@@ -613,7 +613,8 @@ footer {
 	display: flex;
 	z-index:10;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	background-color: black;
 	border-top: 3px solid var(--red);
@@ -645,7 +646,7 @@ h3 {font-size: 14pt;}
 .fundraiser {margin-top: 40px;}
 .booktype {width:95%; margin:auto;
 	height: 260px;}
-.sec3h1{font-size: 16pt;}
+.sec3h1{font-size: 14pt;}
 .startohero {flex-direction: column; height:auto;}
 .startohero img {height: 400px;}
 .startohero .pitch {width: 98%; text-align: center;}
@@ -692,7 +693,7 @@ h4 {font-size: 15px;}
 .booktype p {font-size: 12pt;}
 .featimg {height: 260px; width: 260px;}
 .card {height: 260px; width: 260px;}
-.sec3h1{font-size: pt;}
+.sec3h1{font-size: 12pt;}
 .startohero img {height: 200px;}
 .section5 {width:90%; margin: auto;
 	margin-top: 10px; margin-bottom: 10px;
@@ -707,4 +708,5 @@ h4 {font-size: 15px;}
 .fundexplain {width: 95%;}
 .groupwords {width: 95%; margin-top: 30px;}
 .logopic {display: none;}
+.hide2 {display: none;}
 }
