@@ -148,10 +148,12 @@ h1 {
 	.suggwords h3 {font-size: 16pt;}
 	.suggl {flex-direction: column;
 		justify-content: center;
-		align-items: centerl}
+		align-items: center;
+		padding: 0;}
 	.suggr {flex-direction: column;
 		justify-content: center;
-		align-items: center;}
+		align-items: center;
+		padding: 0;}
 	.suggwords {width: 95%;
 		padding: 0;
 		left: 0px;}
