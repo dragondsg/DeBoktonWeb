@@ -1,0 +1,164 @@
+:root {
+	--blue:	#006bc0;
+	--red: #7b0204;
+	--purple: lavender;
+}
+body {
+	width: 100%; top:0px; left:0px;
+	background-color: snow;
+	margin: 0;
+	top: 0; left: 0;
+	width: 100%;
+    overflow-x: hidden;
+}
+
+.headerbox {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-image: url(../pics/bgtilemistblack.png);
+	margin-top: 0px;
+	gap: 20px;
+	padding: 20px 0px 20px 0px;
+	box-shadow: 0px 10px 5px black;
+}
+
+.headerbox img {
+	width: 300px;
+}
+
+h1 {
+	font-family: "Copperplate Gothic Bold", "Black Chancery", "Roboto", sans;
+	font-size: 64pt;
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: -1px -1px 2px black;
+	text-align: center;
+	padding: 25px 20px 20px 20px;
+}
+
+.colorpurple {
+	color: indigo;
+}
+.colorblack {
+	color: black;
+}
+.colorteal {
+	color: teal;
+}
+.colorcrimson {
+	color: crimson;
+}
+.colorroyalblue {
+	color: royalblue;
+}
+.suggbooks {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: center;
+	width: 95%; margin: auto;
+	padding: 20px;	
+}
+
+.suggl {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	padding: 20px;
+	width: 100%;
+}
+.suggr {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	align-items: center;
+	padding: 20px;
+	margin-top: -300px;
+	width: 100%;
+}
+.suggl img {
+	width: 300px; height: auto; 
+}
+.suggr img {
+	width: 300px; height: auto;
+}
+.suggwords {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 25%; left: 40px;
+	padding: 20px;
+}
+.suggwords h2 {
+	font-family: "Copperplate Gothic Bold", "liberation Sans," sans;
+	font-size: 32pt;
+	color: indigo;
+}
+.suggwords h3 {
+	font-family: "Copperplate Gothic Bold", "liberation Sans," sans;
+	font-size: 20pt;
+	color: teal;
+}
+.suggwords p {
+	font-family: "liberation serif", "liberation sans", sans;
+	font-size: 12pt;
+	color: black;
+}
+.suggtag {
+	width: 100%;
+	margin-bottom: 0;
+	margin-top: 12px;
+	background-image: url(../pics/bgtilemist.png);
+	padding: 15px 0px 15px 0px;
+	box-shadow: 0px 10px 5px black;
+	color: black;
+	size: 18pt;
+	text-align: center;
+}
+
+
+
+@media screen and (max-width:1600px) {
+	.suggbooks {flex-direction: column;}
+	.suggr {margin-top: 0;}
+	.suggwords {width: 40%;}
+	.suggwords h2 {font-size: 28pt;}
+	.suggwords h3 {font-size: 18pt;}
+}
+
+@media screen and (max-width:1023px) {
+	.headerbox img {width: 240px;}	
+}
+
+@media screen and (max-width:767px) {
+	.headerbox img {width: 160px;}	
+	h1 {font-size: 32pt;}
+	.suggwords h2 {font-size: 24pt;}
+	.suggwords h3 {font-size: 16pt;}
+	.suggl {flex-direction: column;
+		justify-content: center;
+		align-items: centerl}
+	.suggr {flex-direction: column;
+		justify-content: center;
+		align-items: center;}
+	.suggwords {width: 95%;
+		padding: 0;
+		left: 0px;}
+}
+@media screen and (max-width:420px) {
+	.headerbox img {width: 80px; gap: 10px;}	
+	h1 {font-size: 24pt;}
+	.suggwords h2 {font-size: 20pt;}
+	.suggwords h3 {font-size: 14pt;}
+}

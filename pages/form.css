@@ -6,7 +6,8 @@
 }
 body {
 	width: 100%; top:0px; left:0px;
-	background-color: snow;
+	/*background-color: slategray;*/
+	background-image: url("../pics/bgtilemist.png");
 	margin: 0;
 	}
 
@@ -156,7 +157,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	width: 70%; margin: auto;
-	background-color: cornsilk;
+	background-color: lavender;	/*Was cornsilk, skyblue*/
 	border-radius: 15px;
 	padding: 15px 20px 15px 20px;
 	margin-bottom: 20px;
@@ -173,7 +174,7 @@ form {
 	margin-right: 5px;
 }
 .bioname {
-	background-image: radial-gradient(white, cornsilk);
+	background-image: radial-gradient(lavender, black);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -194,7 +195,7 @@ form {
 	color: black;
 }
 .authorbio p {text-align: justify;}
-#csoonbackground {background-color: snow;} /*#7a9b9e*/
+#csoonbackground {background-color: snow;} /* snow, #7a9b9e*/
 #csooncolor {background-image: none;}
 
 					
