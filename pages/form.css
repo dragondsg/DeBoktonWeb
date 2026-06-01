@@ -112,7 +112,7 @@ label {
 	justify-content: center;
 	align-items: center;
 }
-#name, #email_address {
+#name, #email_address, #info {
 	width: 80%;
 }
 input {

@@ -15,10 +15,11 @@ if ($conn->connect_error) {
 // Get form data and sanitize (using prepared statements is better for security)
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email_address', FILTER_SANITIZE_STRING); // Consider hashing passwords for security
+$info = filter_input(INPUT_POST, 'info', FILTER_SANITIZE_STRING);
 
 // Prepare and bind the INSERT statement
-$stmt = $conn->prepare("INSERT INTO dbemail (name, email_adress) VALUES (?, ?)");
-$stmt->bind_param("ss", $name, $email); // "ss" means two string parameters
+$stmt = $conn->prepare("INSERT INTO dbemail (name, email_adress, info) VALUES (?, ?, ?)");
+$stmt->bind_param("sss", $name, $email, $info); // "ss" means two string parameters
 
 // Execute the statement
 if ($stmt->execute()) {
