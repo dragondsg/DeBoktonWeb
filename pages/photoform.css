@@ -1,0 +1,92 @@
+
+						/* Photo Carousel */
+
+.rfeaturedPics {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	flex-wrap: wrap;
+	height: 400px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.rfeaturedPics h2 {
+	font-family: "liberation sans", sans;
+	font-size: 24pt;
+	color: black;
+}
+.rphotoPics {
+	position: absolute;
+	height: 25%; width: auto;
+	margin: auto;
+	transition: 0.3s;
+	transform: scale(0);
+	opacity: 0;
+	border: 1px solid #67a1d0;
+	border-radius: 10px;
+	object-fit: contain;
+}
+.ractivePic {
+	transform: scale(3.2);
+	opacity: 1;
+	z-index: 4;
+}
+.rnextPic {
+	height: 200px; width: 160px; object-fit: cover;
+	transform: translateX(240px);
+	opacity: 0.8;
+	z-index: 2;
+}
+.rpreviousPic {
+	height: 200px; width: 160px; object-fit: cover;
+	transform: translateX(-240px);
+	opacity: 0.8;
+	z-index: 2;
+}
+.rlPic {
+	height: 200px; width: 160px; object-fit: cover;
+	transform: translateX(430px);
+	opacity: 0.8;
+	z-index: 2;
+}
+.rfPic {
+	height: 200px; width: 160px; object-fit: cover;
+	transform: translateX(-430px);
+	opacity: 0.8;
+	z-index: 2;
+}
+.rbPic {
+	height: 200px; width: 160px; object-fit: cover;
+	transform: translateX(620px);
+	opacity: 0.8;
+	z-index: 2;
+}
+.raPic {
+	height: 200px; width: 160px; object-fit: cover;
+	transform: translateX(-620px);
+	opacity: 0.8;
+	z-index: 2;
+}
+.rmoveLeft {
+	display:flex;
+	align-items: center;
+	text-decoration: none;
+	position: absolute;
+	left: 0px; justify-content: left;
+	height: 100%; width: 15%;
+	padding-left: 10px;
+	z-index: 3;
+}
+.rmoveRight {
+	display:flex;
+	align-items: center;
+	text-decoration: none;
+	position: absolute;
+	right: 0px; justify-content: right;
+	height: 100%; width: 15%;
+	padding-right: 10px;
+	z-index: 3;
+}
