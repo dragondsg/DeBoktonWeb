@@ -227,7 +227,7 @@ const series = [
 	{	id: "path",   seriesName: "Path Through the Galaxy",   author: "Renee Greene",   illustrator: "",
 		books: ["path1", "path2a", "path2b", "path3a", "path3b", "path3c", "path3d", "path4a", "path4b", "path4c", "path4d", "path4e", "path4f", "path4g", "path4h", "path5"],   genres: ["SciFi", "Fantasy"], category: ["short",""],
 		images: {series: "yrpath.png", square: ""}, featured: false,
-		preview: "ch1path.jpg"
+		preview: "ch1path.pdf"
 	},	
 	{	id: "agenteclipse",   seriesName: "Agent Eclipse",   author: "Renee Greene",   illustrator: "",
 		books: ["agenteclipse1", "agenteclipse2"],   genres: ["Detective", "Mystery"], category: ["short",""],
