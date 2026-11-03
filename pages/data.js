@@ -77,7 +77,7 @@ const series = [
 	{	id: "magetemplars",   seriesName: "Mage Templars",   author: "Renee Greene",   illustrator: "",
 		books: ["magetemplars1", "magetemplars2"],   genres: ["Fantasy"], category: ["novel",""],
 		images: {series: "ndmagetemplars.jpg", square: ""}, featured: false,
-		preview: ""
+		preview: "ch1magetemplars.pdf"
 	},	
 	{	id: "shadow",   seriesName: "The Shadow Wars",    author: "Renee Greene",   illustrator: "",
 		books: ["shadow1", "shadow2"],   genres: ["UrbanFantasy", "Paranormal", "Romance"], category: ["novel", "audio"],
