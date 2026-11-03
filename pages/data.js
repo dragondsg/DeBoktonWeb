@@ -74,6 +74,11 @@ const series = [
 		images: {series: "ndtristan.jpg", square: "featuretristan.png"}, featured: false,
 		preview: "ch1tristan.pdf"
 	},	
+	{	id: "magetemplars",   seriesName: "Mage Templars",   author: "Renee Greene",   illustrator: "",
+		books: ["magetemplars1", "magetemplars2"],   genres: ["Fantasy"], category: ["novel",""],
+		images: {series: "ndmagetemplars.jpg", square: ""}, featured: false,
+		preview: ""
+	},	
 	{	id: "shadow",   seriesName: "The Shadow Wars",    author: "Renee Greene",   illustrator: "",
 		books: ["shadow1", "shadow2"],   genres: ["UrbanFantasy", "Paranormal", "Romance"], category: ["novel", "audio"],
 		images: {series: "ndshadowfighter.jpg", square: "featureshadow.png"}, featured: true,
@@ -200,12 +205,7 @@ const series = [
 		books: ["knightavant1"],   genres: ["Fantasy"], category: ["novel",""],
 		images: {series: "", square: ""}, featured: false,
 		preview: ""
-	},	
-	{	id: "magetemplars",   seriesName: "Mage Templars",   author: "Renee Greene",   illustrator: "",
-		books: ["magetemplars1"],   genres: ["Fantasy"], category: ["novel",""],
-		images: {series: "", square: ""}, featured: false,
-		preview: ""
-	},	
+	},
 	
 											/*Novellas, Young Readers*/
 		
@@ -662,6 +662,21 @@ const books = [
 		links: {paperback: "https://www.amazon.com/gp/product/109118240X?ref_=dbs_m_mng_rwt_calw_tpbk_1&storeType=ebooks",
 			kindle: "https://www.amazon.com/gp/product/B084RH8F7P?notRedirectToSDP=1&ref_=dbs_m_mng_rwt_calw_tkin_tpbk&storeType=ebooks",
 			audiobook: "https://www.amazon.com/gp/product/B0F6VCX877?notRedirectToSDP=1&ref_=dbs_m_mng_rwt_calw_taud_tpbk&storeType=ebooks"},
+	},
+/*Mage Templars*/
+	{	id: "magetemplars1", name: "Intrinsic", pageNum: 323, wordCount: "75,400", price: 14.99,
+		images: {cover: "namagetemplars1.jpg", audio: ""},
+		description: "Kinston is a sun mage, able to fight demons as all mages are. As more portals open and the demons coming through become stronger, Kinston joins the templars to fight them; but he has no idea what he is signing up for, as fighting demons is only part of the troubles he faces, and he'll have to make decisions who to protect and who to let die.",
+		links: {paperback: "https://www.amazon.com/gp/product/B0HMPRTV1H?ref_=dbs_m_mng_rwt_calw_tpbk_0&storeType=ebooks&qid=1793665628&sr=8-2",
+			kindle: "https://www.amazon.com/gp/product/B0HMPRTV1H?ref_=dbs_m_mng_rwt_calw_tpbk_0&storeType=ebooks&qid=1793665628&sr=8-2",
+			audiobook: ""},
+	},
+	{	id: "magetemplars2", name: "Intrepid", pageNum: 371, wordCount: "85,000", price: 14.99,
+		images: {cover: "namagetemplars2.jpg", audio: ""},
+		description: "The situation has gone from bad to worse, and the only way to save the kingdom is to send a group into the demon realm to shut the portals from within. Kinston must choose a team and venture into the demon realm, a place no human has ever returned from alive.",
+		links: {paperback: "https://www.amazon.com/gp/product/B0HMN3PJXM?ref_=dbs_m_mng_rwt_calw_tpbk_1&storeType=ebooks&qid=1793665628&sr=8-2",
+			kindle: "https://www.amazon.com/MAGE-Templars-Intrepid-Renee-Greene-ebook/dp/B0HMMCM863/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1793665628&sr=8-2",
+			audiobook: ""},
 	},
 /*Proxy*/
 	{	id: "proxy1", name: "Proxy Paradox", pageNum: 315, wordCount: "80,000", price: 14.99,
