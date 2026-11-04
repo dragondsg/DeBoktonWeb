@@ -77,7 +77,7 @@ const series = [
 	{	id: "magetemplars",   seriesName: "Mage Templars",   author: "Renee Greene",   illustrator: "",
 		books: ["magetemplars1", "magetemplars2"],   genres: ["Fantasy"], category: ["novel",""],
 		images: {series: "ndmagetemplars.jpg", square: ""}, featured: false,
-		preview: "ch1magetemplars.pdf"
+		preview: ""
 	},	
 	{	id: "shadow",   seriesName: "The Shadow Wars",    author: "Renee Greene",   illustrator: "",
 		books: ["shadow1", "shadow2"],   genres: ["UrbanFantasy", "Paranormal", "Romance"], category: ["novel", "audio"],
@@ -339,6 +339,11 @@ const series = [
 	},	
 	{	id: "dragonhero",   seriesName: "The Dragon and Hero Collection",   author: "Renee Greene",   illustrator: "Tamia Gordon",
 		books: ["dragonhero1"],   genres: ["rhyme"], category: ["picture",""],
+		images: {series: "", square: ""}, featured: false,
+		preview: ""
+	},	
+	{	id: "meganmonkeys",   seriesName: "Megan Michelle and Her Mischievous Monkeys",   author: "Judy Roy",   illustrator: "",
+		books: ["meganmonkeys1"],   genres: ["story"], category: ["picture",""],
 		images: {series: "", square: ""}, featured: false,
 		preview: ""
 	},	
@@ -1334,6 +1339,13 @@ const books = [
 		images: {cover: "pbdragonsheroessm.jpg", audio: ""},
 		description: "Two fun stories, plus silly versions of them. \"I Can Be a Hero!\" teaches children that they can be heroes by doing what is right in a fun rhyme with dragons and knights. \"Never Judge a Dragon,\" teaches children that looks aren't always right in a fun rhyme. Both stories then have a silly version of them done for children, and adults, to laugh at. These are fun stories to read with your children, as they have good meter and cute ideas. All the stories are down with the amazing artwork of Tamia Gordon.",
 		links: {paperback: "https://www.amazon.com/Dragon-Hero-Collection-Renee-Greene/dp/B08993DV6G/ref=monarch_sidesheet",
+			kindle: "",
+			audiobook: ""},
+	},
+	{	id: "meganmonkeys1", name: "Megan Michelle and Her Mischievous Monkeys", pageNum: 33, wordCount: 0, price: 11.99,
+		images: {cover: "pbmeganmonkeyssm.jpg", audio: ""},
+		description: "Megan has imaginary friends. She finds other children do too, and those imaginary friends bring the children together, making them real friends.",
+		links: {paperback: "",
 			kindle: "",
 			audiobook: ""},
 	},
