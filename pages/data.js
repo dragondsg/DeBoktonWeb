@@ -200,12 +200,12 @@ const series = [
 		books: ["kingcobra1"],   genres: ["Fantasy"], category: ["novel",""],
 		images: {series: "", square: ""}, featured: false,
 		preview: ""
-	},	
+	},	/*
 	{	id: "knightavant",   seriesName: "Knight Avant",   author: "Renee Greene",   illustrator: "",
 		books: ["knightavant1"],   genres: ["Fantasy"], category: ["novel",""],
 		images: {series: "", square: ""}, featured: false,
 		preview: ""
-	},
+	},	*/
 	
 											/*Novellas, Young Readers*/
 		
